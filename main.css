@@ -1,0 +1,98 @@
+body {
+  /* 뷰포트의 백분률로 높이값 설정 */
+  height: 100vh;
+  background: url("./images/bg.jpg") no-repeat;
+  background-size: cover;
+  /* 배경이미지는 스크롤에 관계없이 고정시키기 */
+  background-attachment: fixed;
+}
+
+.container {
+  padding: 50px;
+}
+
+.container .heroes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 700px;
+  /* 블록요소에 가로 크기가 정해져 있으면 margin:auto로 중앙으로 정렬 가능 */
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.container .heroes .hero{
+  width: 80px;
+  height: 84px;
+  margin: 4px;
+  background-color: #555;
+  border-radius: 10px;
+  /* box-sizing:border-box로 아이템의 전체크기를 원하는 값으로 적용 */
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  /* hero에서 영역이 넘치는 부분은 숨기기 */
+  overflow: hidden;
+  transform: skewX(-14deg);
+  /* 자식 아이템의 크기는 0.1초, 배경은 0.6초로 적용 */
+  transition: transform .1s, background-color .6s;
+}
+
+.container .heroes .hero:hover{
+  background-color: #ff9c00;
+  transform: skewX(-14deg) scale(1.3);
+  z-index: 1;
+}
+
+.container .heroes .hero .image{
+  width: 140%;
+  height: 100%;
+  /* 부모로부터 변형된 skewX값에 -줘서 이미지 회전 되돌리고,
+    translateX를 이용해 아이템의 배경 이미지 위치조절  */
+  transform: skewX(14deg) translateX(-16px);
+}
+
+/* 하루빨리 js를 배우고 싶게 만들어주는 동기.... */
+.container .heroes .hero:nth-child(1) .image{ background: url("./images/hero1.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(2) .image{ background: url("./images/hero2.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(3) .image{ background: url("./images/hero3.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(4) .image{ background: url("./images/hero4.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(5) .image{ background: url("./images/hero5.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(6) .image{ background: url("./images/hero6.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(7) .image{ background: url("./images/hero7.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(8) .image{ background: url("./images/hero8.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(9) .image{ background: url("./images/hero9.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(10) .image{ background: url("./images/hero10.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(11) .image{ background: url("./images/hero11.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(12) .image{ background: url("./images/hero12.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(13) .image{ background: url("./images/hero13.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(14) .image{ background: url("./images/hero14.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(15) .image{ background: url("./images/hero15.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(16) .image{ background: url("./images/hero16.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(17) .image{ background: url("./images/hero17.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(18) .image{ background: url("./images/hero18.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(19) .image{ background: url("./images/hero19.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(20) .image{ background: url("./images/hero20.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(21) .image{ background: url("./images/hero21.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(22) .image{ background: url("./images/hero22.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(23) .image{ background: url("./images/hero23.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(24) .image{ background: url("./images/hero24.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(25) .image{ background: url("./images/hero25.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(26) .image{ background: url("./images/hero26.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(27) .image{ background: url("./images/hero27.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(28) .image{ background: url("./images/hero28.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(29) .image{ background: url("./images/hero29.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(30) .image{ background: url("./images/hero30.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(31) .image{ background: url("./images/hero31.png") center no-repeat; background-size: 90px; }
+.container .heroes .hero:nth-child(32) .image{ background: url("./images/hero32.png") center no-repeat; background-size: 90px; }
+
+/* 형제요소인 .image쪽 작업이 끝났으니 그 다음 요소인 .logo를 아래에 작업 */
+.container .logo {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container .logo img{
+  width: 100%;
+}
+
